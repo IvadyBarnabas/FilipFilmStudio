@@ -7,11 +7,11 @@ const news = [
 {
     id:1,
 
-    title:"Új Batman film készül",
+    title:"Kirakták a Lego Batman Deluxe Edition kiegészítőit",
 
-    image:"https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1200&auto=format&fit=crop",
+    image:"kepek/legobatmandeluxe.webp",
 
-    category:"FILM",
+    category:"GAMES",
 
     author:"Filip Film Studio",
 
