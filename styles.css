@@ -1,0 +1,442 @@
+/* ========================= */
+/* style.css */
+/* ========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#070707;
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+
+header{
+    width:100%;
+    height:90px;
+
+    background:#111;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 80px;
+
+    position:sticky;
+    top:0;
+
+    z-index:999;
+
+    border-bottom:2px solid #b30000;
+}
+
+.logo{
+    font-size:2rem;
+    font-family:'Bebas Neue',sans-serif;
+    color:#ff1e1e;
+    letter-spacing:3px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff1e1e;
+}
+
+.hero{
+    height:90vh;
+
+    background:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1920&auto=format&fit=crop') center/cover;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    text-align:center;
+
+    width:80%;
+}
+
+.hero-content h1{
+    font-size:6rem;
+    color:#ff1e1e;
+    margin-bottom:20px;
+    font-family:'Bebas Neue',sans-serif;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.hero-btn{
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:15px 40px;
+
+    background:#b30000;
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+.hero-btn:hover{
+    background:#ff1e1e;
+    transform:translateY(-5px);
+}
+
+.home-section{
+    width:90%;
+    margin:80px auto;
+}
+
+.home-section h2{
+    font-size:3rem;
+    margin-bottom:30px;
+    color:#ff1e1e;
+    font-family:'Bebas Neue',sans-serif;
+}
+
+.featured-news{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    background:#111;
+
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+.featured-news img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.featured-content{
+    padding:40px;
+}
+
+.featured-content span{
+    background:#b30000;
+    padding:8px 15px;
+    border-radius:10px;
+}
+
+.featured-content h3{
+    margin:25px 0;
+    font-size:2rem;
+}
+
+.featured-content p{
+    line-height:1.8;
+}
+
+.featured-content a{
+    display:inline-block;
+    margin-top:30px;
+
+    color:white;
+
+    text-decoration:none;
+
+    background:#b30000;
+
+    padding:12px 30px;
+
+    border-radius:10px;
+}
+
+.page-banner{
+    height:300px;
+
+    background:linear-gradient(to right,#000,#4d0000);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.page-banner h1{
+    font-size:5rem;
+    color:white;
+    font-family:'Bebas Neue',sans-serif;
+}
+
+.news-container{
+    width:90%;
+    margin:70px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:40px;
+}
+
+.news-card{
+    background:#111;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:0.4s;
+}
+
+.news-card:hover{
+    transform:translateY(-10px);
+}
+
+.news-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.news-info{
+    padding:25px;
+}
+
+.news-info span{
+    color:#ff1e1e;
+    font-size:0.9rem;
+}
+
+.news-info h3{
+    margin:20px 0;
+    font-size:1.5rem;
+}
+
+.news-info a{
+    text-decoration:none;
+    color:white;
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#b30000;
+
+    padding:10px 25px;
+
+    border-radius:10px;
+}
+
+.article-page{
+    width:75%;
+    margin:80px auto;
+}
+
+.article-page img{
+    width:100%;
+    border-radius:20px;
+    margin:30px 0;
+}
+
+.article-page h1{
+    font-size:4rem;
+    color:#ff1e1e;
+}
+
+.article-page p{
+    line-height:2;
+    font-size:1.1rem;
+}
+
+.yt-grid{
+    width:90%;
+    margin:70px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+
+.movie-card{
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+    text-decoration:none;
+    color:white;
+    transition:0.4s;
+}
+
+.movie-card:hover{
+    transform:scale(1.03);
+}
+
+.movie-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.movie-info{
+    padding:25px;
+}
+
+.movie-info h3{
+    margin-bottom:10px;
+}
+
+footer{
+    margin-top:100px;
+
+    background:#111;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-top:2px solid #b30000;
+}
+
+@media(max-width:900px){
+
+    header{
+        padding:0 20px;
+    }
+
+    .hero-content h1{
+        font-size:4rem;
+    }
+
+    .featured-news{
+        grid-template-columns:1fr;
+    }
+
+}
+/* ========================= */
+/* ARTICLE PAGE EXTRA CSS */
+/* ========================= */
+
+
+.article-header{
+    margin-bottom:40px;
+}
+
+.article-category{
+    background:#b30000;
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    font-size:0.9rem;
+
+    display:inline-block;
+
+    margin-bottom:25px;
+}
+
+.article-header h1{
+    font-size:4.5rem;
+    line-height:1.1;
+
+    color:#ff1e1e;
+
+    margin-bottom:25px;
+
+    font-family:'Bebas Neue',sans-serif;
+}
+
+.article-meta{
+    display:flex;
+    gap:30px;
+
+    color:#999;
+
+    border-bottom:1px solid #222;
+
+    padding-bottom:25px;
+}
+
+.article-image{
+    width:100%;
+    height:600px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    margin:50px 0;
+
+    box-shadow:0 0 30px rgba(255,0,0,0.2);
+}
+
+.article-content{
+    background:#111;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    line-height:2.2;
+
+    font-size:1.15rem;
+
+    box-shadow:0 0 30px rgba(0,0,0,0.4);
+}
+
+.article-content p{
+    margin-bottom:35px;
+
+    color:#ddd;
+}
+
+@media(max-width:900px){
+
+    .article-page{
+        width:90%;
+    }
+
+    .article-header h1{
+        font-size:3rem;
+    }
+
+    .article-image{
+        height:350px;
+    }
+
+    .article-content{
+        padding:30px;
+    }
+
+}
