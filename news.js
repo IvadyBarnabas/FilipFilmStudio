@@ -2,60 +2,69 @@ const news = [
 
 {
     id:1,
-    title:"Kirakták a Lego Batman Deluxe Edition kiegészítőit",
+    title:"Bemutatták a Lego Batman Deluxe Edition kiegészítőit",
     category:"GAMES",
     image:"kepek/legobatmandeluxe.webp",
+    date:"2026. Május 13."
 },
 
 {
     id:2,
     title:"Megjelent az ABSOLUTE Ben 10 képregény",
     category:"COMICS",
-    image:"kepek/absoluteben10.webp"
+    image:"kepek/absoluteben10.webp",
+    date:"2026. Május 13."
 },
 
 {
     id:3,
     title:"Akció figurával mutatták be a Punisher teljesen új megjelenését",
     category:"MOVIES",
-    image:"kepek/punisherfigure.webp"
+    image:"kepek/punisherfigure.webp",
+    date:"2026. Május 13."
 },
 
 {
     id:4,
     title:"A mese karakterek horror verziói ellepik az internetet",
     category:"MOVIES",
-    image:"kepek/mousetrap.webp"
+    image:"kepek/mousetrap.webp",
+    date:"2026. Május 13."
 },
 {
     id:5,
     title:"A Marvel is előjön a maga Absolute univerzumával",
     category:"COMICS",
-    image:"kepek/midnight.webp"
+    image:"kepek/midnight.webp",
+    date:"2026. Május 13."
 },
 {
     id:6,
     title:"40 éves lett a vámpírból lett denevér Robert Pattinson",
     category:"MOVIES",
-    image:"kepek/robertpattinson.webp"
+    image:"kepek/robertpattinson.webp",
+    date:"2026. Május 13."
 },
 {
     id:7,
     title:"Minden amit tudunk az érkező Spider Noir sorozatról",
     category:"MOVIES",
-    image:"kepek/spidernoir.webp"
+    image:"kepek/spidernoir.webp",
+    date:"2026. Május 13."
 },
 {
     id:8,
     title:"Megérkezett az Overwatch a Fortnite-ba",
     category:"GAMES",
-    image:"kepek/fortnitexoverwatch.webp"
+    image:"kepek/fortnitexoverwatch.webp",
+    date:"2026. Május 13."
 },
 {
     id:9,
     title:"Új hősök érkeztek a Marvel Rivals frissítésében",
     category:"GAMES",
-    image:"kepek/mr8.webp"
+    image:"kepek/mr8.webp",
+    date:"2026. Május 13."
 }
 
 ];
@@ -97,6 +106,7 @@ function renderNews(items) {
   <div class="news-info">
 
   <span>${item.category}</span>
+  <div class="date">${item.date || ''}</div>
 
   <h3>${item.title}</h3>
 

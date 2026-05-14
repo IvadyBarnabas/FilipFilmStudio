@@ -261,6 +261,7 @@ nav a:hover{
     border-radius:20px;
     overflow:hidden;
     transition:0.4s;
+    position:relative;
 }
 
 .news-card:hover{
@@ -273,7 +274,16 @@ nav a:hover{
     object-fit:cover;
     border-bottom: solid 2px #b30000;
 }
-
+.news-card .date{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:rgba(0,0,0,0.6);
+    color:#ddd;
+    padding:6px 12px;
+    border-radius:8px;
+    font-size:0.8rem;
+}
 .news-info{
     padding:25px;
 }

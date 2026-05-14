@@ -4,7 +4,7 @@ const news = [
 {
     id:1,
 
-    title:"Kirakták a Lego Batman Deluxe Edition kiegészítőit",
+    title:"Bemutatták a Lego Batman Deluxe Edition kiegészítőit",
 
     image:"kepek/legobatmandeluxe.webp",
 
@@ -19,7 +19,7 @@ const news = [
     <div class="article-intro">
 
         <p>
-        A TT Games végre hivatalosan is bemutatta a LEGO Batman Deluxe Edition összes extra tartalmát.
+        A TT Games hivatalosan is bemutatta a LEGO Batman Deluxe Edition összes extra tartalmát.
         A csomag több új karaktert, exkluzív pályákat és filmes skineket is tartalmaz majd.
         </p>
 
@@ -272,6 +272,105 @@ const news = [
     A rajongók már most izgatottan várják, hogy milyen új történeteket és karaktereket ismerhetnek meg
     a sorozatban.
     </p>
+    `
+},
+{
+    id:8,
+    title:"Megérkezett az Overwatch a Fortnite-ba",
+    image:"kepek/fortnitexoverwatch.webp",
+    category:"GAMES",
+    author:"Filip Corvina",
+    date:"2026. Május 3.",
+    content:`
+    <p>
+    A Fortnite fejlesztői hivatalosan bejelentették, hogy az Overwatch karakterei is elérhetővé válnak a játékban.
+    </p>
+    <p>
+    A kiegészítés során a játékosok új karaktereket és fegyvereket ismerhetnek meg, amelyek az Overwatch univerzumából származnak.
+    </p>
+    <p>
+    A rajongók már most izgatottan várják az első előzetest, ugyanis a koncepciós képek alapján
+    a látványvilág rendkívül filmes és brutális hangulatú lesz. A produkció forgatása várhatóan még idén elkezdődik.
+    </p>
+    <p>
+    A DC célja egy olyan filmes univerzum felépítése, amely komolyabb történetmeséléssel és erősebb karakterközpontú
+    megközelítéssel különbözik majd a korábbi adaptációktól.
+    </p>
+    `
+},
+{
+    id:9,
+    title:"Új hősök érkeztek a Marvel Rivals frissítésében",
+    image:"kepek/mr8.webp",
+    category:"GAMES",
+    author:"Filip Corvina",
+    date:"2026. Május 13.",
+    content:`
+
+    <h2>Újabb két karakter érkezik</h2>
+
+    <div class="article-row">
+
+        <div class="article-text">
+
+            <p>
+            A Marvel Rivals legújabb frissítésében két új karaktert is bemutattak, akik Devil Dinosaur és Cyclops. Cyclops csak a 8.5-öst frissítésben lesz elérhető, míg Devil Dino már most is játszható.
+            </p>
+
+            <p>
+            Devil Dinosaur egy Vangard lesz, aki a harcban hatalmas testfelépítésére és egy erőtérpajzsra támaszkodik, hogy az első vonalban küzdjön, miközben ősi harapásaival folyamatos vérzési hatást okoz a célpontokon. Ahogy áttöri az ellenség védelmét, egyre agresszívebbé válik. Devil képes széttépni a védtelen prédát, és ideiglenesen hatalmas állkapcsába zárni a vérző ellenfeleket, így kiiktatva őket a harcból egy irányító lefogással.
+            </p>
+
+        </div>
+
+        <img src="kepek/devildino.webp" alt="Batman DLC">
+
+    </div>
+
+    <h2>Íme az új Battle Pass</h2>
+
+    <div class="article-row reverse">
+
+        <img src="kepek/mrs8pass.webp" alt="LEGO Batman pálya">
+
+        <div class="article-text">
+
+            <p>
+            A játékhoz több filmes skin is érkezik majd, köztük klasszikus és modern Batman kosztümök.
+            A fejlesztők célja az volt, hogy a rajongók szinte minden korszakból találjanak kedvenc dizájnt.
+            </p>
+
+            <p>
+            A Deluxe Edition tulajdonosai exkluzív Gotham pályákhoz is hozzáférnek,
+            amelyek teljesen új küldetéseket és gyűjthető tárgyakat tartalmaznak.
+            </p>
+
+        </div>
+
+    </div>
+
+    <h2>Még több skin!</h2>
+
+    <div class="article-row">
+
+        <div class="article-text">
+
+            <p>
+            A Deluxe Edition egyik legnagyobb érdekessége az új játszható karakterek listája.
+            A kiszivárgott információk alapján több alternatív Batman és Joker verzió is bekerülhet a játékba.
+            </p>
+
+            <p>
+            Emellett állítólag külön DLC történetcsomagok is készülnek majd,
+            amelyek ikonikus DC történeteket dolgoznak fel LEGO stílusban.
+            </p>
+
+        </div>
+
+        <img src="kepek/moreskins.webp" alt="Batman DLC">
+
+    </div>
+
     `
 }
 
