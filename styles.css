@@ -200,21 +200,65 @@ nav a:hover{
     font-family:'Bebas Neue',sans-serif;
 }
 
-.news-container{
+.category-bar{
     width:90%;
-    margin:70px auto;
+    margin:25px auto 40px auto;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    align-items:center;
+}
 
+.category-bar .cat-btn{
+    background:transparent;
+    border:1px solid rgba(255,255,255,0.08);
+    color:rgba(255,255,255,0.9);
+    padding:8px 16px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    letter-spacing:0.6px;
+    transition:all 0.18s ease;
+}
+
+.category-bar .cat-btn:hover{
+    transform:translateY(-3px);
+    border-color:#b30000;
+    color:#fff;
+    background:rgba(179,0,0,0.06);
+}
+
+.category-bar .cat-btn.active{
+    background:#b30000;
+    border-color:#b30000;
+    color:white;
+    box-shadow:0 8px 30px rgba(179,0,0,0.12);
+}
+
+@media(max-width:900px){
+    .category-bar{
+        justify-content:center;
+        gap:10px;
+        margin:18px auto 30px auto;
+    }
+
+    .category-bar .cat-btn{
+        padding:7px 12px;
+        font-size:0.95rem;
+    }
+}
+
+.news-container{
+    max-width: 1200px;
+    margin:70px auto;
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
-
     gap:40px;
 }
 
 .news-card{
     background:#111;
-
     border-radius:20px;
-
     overflow:hidden;
     transition:0.4s;
 }
@@ -227,6 +271,7 @@ nav a:hover{
     width:100%;
     height:350px;
     object-fit:cover;
+    border-bottom: solid 2px #b30000;
 }
 
 .news-info{
@@ -246,15 +291,10 @@ nav a:hover{
 .news-info a{
     text-decoration:none;
     color:white;
-
     display:inline-block;
-
     margin-top:20px;
-
     background:#b30000;
-
     padding:10px 25px;
-
     border-radius:10px;
 }
 
@@ -316,13 +356,9 @@ nav a:hover{
 
 footer{
     margin-top:100px;
-
     background:#111;
-
     padding:30px;
-
     text-align:center;
-
     border-top:2px solid #b30000;
 }
 
@@ -341,10 +377,6 @@ footer{
     }
 
 }
-/* ========================= */
-/* ARTICLE PAGE EXTRA CSS */
-/* ========================= */
-
 
 .article-header{
     margin-bottom:40px;
@@ -353,50 +385,35 @@ footer{
 .article-category{
     background:#b30000;
     color:white;
-
     padding:10px 18px;
-
     border-radius:10px;
-
     font-size:0.9rem;
-
     display:inline-block;
-
     margin-bottom:25px;
 }
 
 .article-header h1{
     font-size:4.5rem;
     line-height:1.1;
-
     color:#ff1e1e;
-
     margin-bottom:25px;
-
     font-family:'Bebas Neue',sans-serif;
 }
 
 .article-meta{
     display:flex;
     gap:30px;
-
     color:#999;
-
     border-bottom:1px solid #222;
-
     padding-bottom:25px;
 }
 
 .article-image{
     width:100%;
-    height:600px;
-
+    max-height:600px;
     object-fit:cover;
-
     border-radius:25px;
-
     margin:50px 0;
-
     box-shadow:0 0 30px rgba(255,0,0,0.2);
 }
 
@@ -421,7 +438,9 @@ footer{
 }
 
 @media(max-width:900px){
-
+    .article-header{
+        padding:0 20px;
+    }
     .article-page{
         width:90%;
     }
@@ -437,5 +456,9 @@ footer{
     .article-content{
         padding:30px;
     }
+    .news-container{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+}
 
 }

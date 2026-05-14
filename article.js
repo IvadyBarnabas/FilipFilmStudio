@@ -1,6 +1,3 @@
-// =========================
-// article.js
-// =========================
 
 const news = [
 
@@ -13,7 +10,7 @@ const news = [
 
     category:"GAMES",
 
-    author:"Filip Film Studio",
+    author:"Filip Corvina",
 
     date:"2026. Május 13.",
 
@@ -52,7 +49,7 @@ const news = [
 
     category:"COMICS",
 
-    author:"Filip Film Studio",
+    author:"Filip Corvina",
 
     date:"2026. Május 12.",
 
@@ -87,9 +84,9 @@ const news = [
 
     image:"kepek/punisherfigure.webp",
 
-    category:"COMICS",
+    category:"MOVIES",
 
-    author:"Filip Film Studio",
+    author:"Filip Corvina",
 
     date:"2026. Május 10.",
 
@@ -121,7 +118,7 @@ const news = [
     title:"A mese karakterek horror verziói ellepik az internetet",
     image:"kepek/mousetrap.webp",
     category:"MOVIES",
-    author:"Filip Film Studio",
+    author:"Filip Corvina",
     date:"2026. Május 8.",
     content:`
     <p>
@@ -140,10 +137,94 @@ const news = [
     és egyre több ilyen alkotás jelenik meg a közösségi médiában.
     </p>
     `
+},
+{
+    id:5,
+    title:"A Marvel is előjön a maga Absolute univerzumával",
+    image:"kepek/midnight.webp",
+    category:"COMICS",
+    author:"Filip Corvina",
+    date:"2026. Május 6.",
+    content:`
+
+    <p>
+    A Marvel Studios bejelentette, hogy új irányvonalat vesznek a képregények adaptálásában, és bemutatják az
+    "Absolute" univerzumban játszódó történeteket.
+    </p>
+
+    <p>
+    Az új projektek célja, hogy mélyebb és sötétebb narratívákat kínáljanak, amelyek a karakterek pszichológiai
+    fejlődésére és a morális dilemmákra összpontosítanak.
+    </p>
+
+    <p>
+    A rajongók már most hatalmas izgalommal várják az első előzetest, ugyanis a koncepciós képek alapján
+    a látványvilág rendkívül filmes és brutális hangulatú lesz. A produkció forgatása várhatóan még idén elkezdődik.
+    </p>
+
+    <p>
+    A DC célja egy olyan filmes univerzum felépítése, amely komolyabb történetmeséléssel és erősebb karakterközpontú
+    megközelítéssel különbözik majd a korábbi adaptációktól.
+    </p>
+
+    `
+},
+
+{
+    id:6,
+    title:"40 éves lett a vámpírból lett denevér Robert Pattinson",
+    image:"kepek/robertpattinson.webp",
+    category:"MOVIES",
+    author:"Filip Corvina",
+    date:"2026. Május 5.",
+    content:`
+    <p>
+    Robert Pattinson, a híres színész, aki a vámpír Edward Cullen szerepében vált ismertté a Twilight
+    filmsorozatban, most 40 éves lett. Pattinson karrierje azóta is töretlen, és számos sikeres filmben
+    szerepelt.
+    </p>
+    <p>
+    A színész legújabb projektje a Batman, ahol a sötét lovag szerepét alakítja. A film várhatóan
+    újraértelmezi a klasszikus karaktert, és Pattinson eddigi legkomolyabb alakítását ígéri.
+    </p>
+    <p>
+    Pattinson a szerep kedvéért jelentős átalakuláson ment keresztül, és a rajongók már alig várják,
+    hogy láthassák őt a vásznon.
+    </p>
+    <p>
+    A színész karrierje során számos díjat nyert, és a kritikusok is elismerik tehetségét.
+    </p>
+    `
+},
+{
+    id:7,
+    title:"Minden amit tudunk az érkező Spider Noir sorozatról",
+    image:"kepek/spidernoir.webp",
+    category:"MOVIES",
+    author:"Filip Corvina",
+    date:"2026. Május 4.",
+    content:`
+    <p>
+    A Marvel Studios bejelentette, hogy egy új Spider Noir sorozatot készítenek, amely a sötét és felnőtt témákat
+    helyezi a középpontba.
+    </p>
+    <p>
+    A sorozat középpontjában a híres Pókember alternatív verziója áll, aki a 1930-as évek New York-jában
+    harcol a bűnözés ellen.
+    </p>
+    <p>
+    A készítők ígérete szerint a sorozat stílusa és hangulata is eltér majd a megszokott Marvel
+    produkcióktól, és a noir műfaj elemeit is magában foglalja.
+    </p>
+    <p>
+    A rajongók már most izgatottan várják, hogy milyen új történeteket és karaktereket ismerhetnek meg
+    a sorozatban.
+    </p>
+    `
 }
 
 ];
-
+ 
 const params = new URLSearchParams(window.location.search);
 
 const id = params.get("id");

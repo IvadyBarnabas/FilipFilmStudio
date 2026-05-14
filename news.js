@@ -1,7 +1,3 @@
-// =========================
-// news.js
-// =========================
-
 const news = [
 
 {
@@ -21,7 +17,7 @@ const news = [
 {
     id:3,
     title:"Akció figurával mutatták be a Punisher teljesen új megjelenését",
-    category:"COMICS",
+    category:"MOVIES",
     image:"kepek/punisherfigure.webp"
 },
 
@@ -36,35 +32,82 @@ const news = [
     title:"A Marvel is előjön a maga Absolute univerzumával",
     category:"COMICS",
     image:"kepek/midnight.webp"
+},
+{
+    id:6,
+    title:"40 éves lett a vámpírból lett denevér Robert Pattinson",
+    category:"MOVIES",
+    image:"kepek/robertpattinson.webp"
+},
+{
+    id:7,
+    title:"Minden amit tudunk az érkező Spider Noir sorozatról",
+    category:"MOVIES",
+    image:"kepek/spidernoir.webp"
+},
+{
+    id:8,
+    title:"Megérkezett az Overwatch a Fortnite-ba",
+    category:"GAMES",
+    image:"kepek/fortnitexoverwatch.webp"
+},
+{
+    id:9,
+    title:"Új hősök érkeztek a Marvel Rivals frissítésében",
+    category:"GAMES",
+    image:"kepek/mr8.webp"
 }
 
 ];
 
 const container = document.getElementById("newsContainer");
+const categoryBar = document.getElementById("categoryBar");
 
-news.forEach(item => {
+const categories = ["ALL", ...Array.from(new Set(news.map(n => n.category)))];
 
-container.innerHTML += `
+function renderCategories() {
+  if (!categoryBar) return;
+  categoryBar.innerHTML = categories.map(cat => {
+    const label = cat === 'ALL' ? 'Összes' : cat.charAt(0) + cat.slice(1).toLowerCase();
+    return `<button class="cat-btn" data-cat="${cat}">${label}</button>`;
+  }).join('');
 
-<div class="news-card">
+  categoryBar.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      categoryBar.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      if (cat === 'ALL') renderNews(news);
+      else renderNews(news.filter(n => n.category === cat));
+    });
+  });
 
-<img src="${item.image}">
-
-<div class="news-info">
-
-<span>${item.category}</span>
-
-<h3>${item.title}</h3>
-
-<a href="new.html?id=${item.id}">
-Megnyitás
-</a>
-
-</div>
-
-</div>
-
-`;
-
+  const first = categoryBar.querySelector('.cat-btn');
+  if (first) first.classList.add('active');
 }
-);
+
+function renderNews(items) {
+  if (!container) return;
+  container.innerHTML = items.map(item => `
+
+  <div class="news-card">
+
+  <img src="${item.image}" alt="${item.title}">
+
+  <div class="news-info">
+
+  <span>${item.category}</span>
+
+  <h3>${item.title}</h3>
+
+  <a href="new.html?id=${item.id}">Megnyitás</a>
+
+  </div>
+
+  </div>
+
+  `).join('');
+}
+
+renderCategories();
+renderNews(news);
