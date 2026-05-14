@@ -115,6 +115,31 @@ const news = [
     </p>
 
     `
+},
+{
+    id:4,
+    title:"A mese karakterek horror verziói ellepik az internetet",
+    image:"kepek/mousetrap.webp",
+    category:"MOVIES",
+    author:"Filip Film Studio",
+    date:"2026. Május 8.",
+    content:`
+    <p>
+    Az internetet elárasztották a mese karakterek horror verziói, amelyek egyre népszerűbbek a rajongók körében.
+    </p>
+    <p>
+    Ezek a művészeti alkotások gyakran sötét, groteszk és félelmetes ábrázolásokat mutatnak be, amelyek teljesen ellentétesek
+    a karakterek eredeti, barátságos megjelenésével.
+    </p>
+    <p>
+    A művészek kreatív módon használják a félelmetes elemeket, hogy új értelmet adjanak a jól ismert karaktereknek,
+    miközben megőrzik azok alapvető jellemzőit.
+    </p>
+    <p>
+    A rajongók egyre inkább értékelik ezeket a műalkotásokat, amelyek új perspektívát kínálnak a klasszikus mese karakterekre,
+    és egyre több ilyen alkotás jelenik meg a közösségi médiában.
+    </p>
+    `
 }
 
 ];

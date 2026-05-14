@@ -23,6 +23,19 @@ const news = [
     title:"Akció figurával mutatták be a Punisher teljesen új megjelenését",
     category:"COMICS",
     image:"kepek/punisherfigure.webp"
+},
+
+{
+    id:4,
+    title:"A mese karakterek horror verziói ellepik az internetet",
+    category:"MOVIES",
+    image:"kepek/mousetrap.webp"
+},
+{
+    id:5,
+    title:"A Marvel is előjön a maga Absolute univerzumával",
+    category:"COMICS",
+    image:"kepek/midnight.webp"
 }
 
 ];
