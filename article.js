@@ -16,26 +16,78 @@ const news = [
 
     content:`
 
-    <p>
-    A DC Studios hivatalosan is megerősítette, hogy egy teljesen új Batman film fejlesztése jelenleg is folyamatban van. 
-    A projekt célja, hogy sokkal sötétebb, komorabb és realisztikusabb hangulatot hozzon létre, mint amit az elmúlt évek 
-    szuperhősfilmjeiben megszokhattunk.
-    </p>
+    <div class="article-intro">
 
-    <p>
-    A film állítólag Gotham városának korrupt világára és Batman nyomozói oldalára fog koncentrálni. 
-    A kiszivárgott információk alapján több ikonikus gonosztevő is feltűnhet majd, köztük Kétarc és Madárijesztő.
-    </p>
+        <p>
+        A TT Games végre hivatalosan is bemutatta a LEGO Batman Deluxe Edition összes extra tartalmát.
+        A csomag több új karaktert, exkluzív pályákat és filmes skineket is tartalmaz majd.
+        </p>
 
-    <p>
-    A rajongók már most hatalmas izgalommal várják az első előzetest, ugyanis a koncepciós képek alapján 
-    a látványvilág rendkívül filmes és brutális hangulatú lesz. A produkció forgatása várhatóan még idén elkezdődik.
-    </p>
+    </div>
 
-    <p>
-    A DC célja egy olyan filmes univerzum felépítése, amely komolyabb történetmeséléssel és erősebb karakterközpontú 
-    megközelítéssel különbözik majd a korábbi adaptációktól.
-    </p>
+    <h2>Új játszható karakterek érkeznek</h2>
+
+    <div class="article-row">
+
+        <div class="article-text">
+
+            <p>
+            A Deluxe Edition egyik legnagyobb érdekessége az új játszható karakterek listája.
+            A kiszivárgott információk alapján több alternatív Batman és Joker verzió is bekerülhet a játékba.
+            </p>
+
+            <p>
+            Emellett állítólag külön DLC történetcsomagok is készülnek majd,
+            amelyek ikonikus DC történeteket dolgoznak fel LEGO stílusban.
+            </p>
+
+        </div>
+
+        <img src="kepek/legobatmandeluxehatter.webp" alt="Batman DLC">
+
+    </div>
+
+    <h2>Filmes kinézetek és exkluzív pályák</h2>
+
+    <div class="article-row reverse">
+
+        <img src="kepek/legobatmandeluxepack.webp" alt="LEGO Batman pálya">
+
+        <div class="article-text">
+
+            <p>
+            A játékhoz több filmes skin is érkezik majd, köztük klasszikus és modern Batman kosztümök.
+            A fejlesztők célja az volt, hogy a rajongók szinte minden korszakból találjanak kedvenc dizájnt.
+            </p>
+
+            <p>
+            A Deluxe Edition tulajdonosai exkluzív Gotham pályákhoz is hozzáférnek,
+            amelyek teljesen új küldetéseket és gyűjthető tárgyakat tartalmaznak.
+            </p>
+
+        </div>
+
+    </div>
+
+    <blockquote>
+        "Ez lesz minden idők legnagyobb LEGO Batman játéka."
+    </blockquote>
+
+    <h2>Mikor jelenik meg?</h2>
+
+    <div class="article-full">
+
+        <p>
+        A megjelenési dátumot egyelőre még nem erősítették meg hivatalosan,
+        azonban a legtöbb bennfentes szerint a játék még az év vége előtt érkezhet.
+        </p>
+
+        <p>
+        A rajongók már most hatalmas izgalommal várják az első gameplay előzetest,
+        amely várhatóan a nyári gaming eseményeken kerül majd bemutatásra.
+        </p>
+
+    </div>
 
     `
 },
