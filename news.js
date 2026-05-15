@@ -59,12 +59,21 @@ const news = [
     image:"kepek/fortnitexoverwatch.webp",
     date:"2026. Május 13."
 },
+
 {
     id:9,
     title:"Új hősök érkeztek a Marvel Rivals frissítésében",
     category:"GAMES",
     image:"kepek/mr8.webp",
     date:"2026. Május 13."
+},
+
+{
+    id:10,
+    title:"Újdonságok a Brand New Dayről",
+    category:"MOVIES",
+    image:"kepek/brandnewday.webp",
+    date:"2026. Május 14."
 }
 
 ];
